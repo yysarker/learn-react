@@ -53,7 +53,7 @@ class App extends Component{
             <div className="App">
                 <div className="App-header">
                     <img src={logo} className="App-logo" alt="icon"/>
-                    <Header/>
+                    <Header name="Yeahyea Sarker" phone="333-333-3333" email="yeahyea@gmail.com" roll="Software Developer"/>
                     {/*<MainContent/>*/}
                     <Footer/>
                 </div>
