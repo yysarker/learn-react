@@ -42,21 +42,24 @@
 
 import React, {Component} from "react"
 import logo from "./logo.svg"
+import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
 import Header from "./components/header";
-// import MainContent from "./components/mainContent";
+import MainContent from "./components/mainContent";
 import Footer from "./components/footer";
 
 class App extends Component{
     render() {
         return(
             <div className="App">
-                <div className="App-header">
-                    <img src={logo} className="App-logo" alt="icon"/>
-                    <Header name="Yeahyea Sarker" phone="333-333-3333" email="yeahyea@gmail.com" roll="Software Developer"/>
-
-                    <Footer />
+                <Header roll="ReactJS Developer"/>
+                <div className="container">
+                    <MainContent name="Yeahyea Sarker" Age="24" Email="yeahyea@manarat.ac.bd" phone="222-222-2222"/>
+                    <MainContent name="Navil Sarker" Age="25" Email="navil@manarat.ac.bd" phone="222-222-2222"/>
+                    <MainContent name="Saiful Sarker" Age="26" Email="saiful@manarat.ac.bd" phone="222-222-2222"/>
+                    <MainContent name="Jahid Sarker" Age="27" Email="jahid@manarat.ac.bd" phone="222-222-2222"/>
                 </div>
+                <Footer />
             </div>
         )
     }

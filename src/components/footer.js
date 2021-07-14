@@ -1,21 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 const Footer = props => {
-    const { job } = props;
     return(
-        <div className="footer">
-            <hr/>
-            <h2>This is Footer</h2>
-            <h2>{job}</h2>
-
+        <div className="footer bg-danger text-white">
+            <div className="container text-center">
+                <p className="">Copyright @ 2021</p>
+            </div>
         </div>
     )
-}
-Footer.defaultProps = {
-    job: 'Full Stack Developer'
-}
-Footer.propTypes = {
-    job: PropTypes.string.isRequired
 }
 export default Footer

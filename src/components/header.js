@@ -2,18 +2,29 @@ import React, {Component} from 'react'
 import PropTypes from "prop-types"
 class Header extends Component {
     render() {
-        const {name, phone, email, roll, gender} =this.props;
+        const {roll, gender} =this.props;
         return (
-            <div>
-                <h2>This is Header Section</h2>
-                <h2>{roll}</h2>
-                <h3>Name: {name}.</h3>
-                <h3>phone: {phone}.</h3>
-                <h3>Email: {email}.</h3>
-                <h3>Gender: {gender}.</h3>
-                <br/>
-            </div>
-        );
+            <nav className="navbar navbar-expand-sm navbar-dark bg-danger mb-2">
+                <div className="container">
+                    <a className="navbar-brand" href="/">React JS</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        )
     }
 }
 Header.defaultProps ={
