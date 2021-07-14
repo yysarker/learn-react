@@ -40,34 +40,22 @@
 // export default App
 
 
-import React from "react"
+import React, {Component} from "react"
 import logo from "./logo.svg"
 import "./App.css"
+import Header from "./components/header";
+import MainContent from "./components/mainContent";
+import Footer from "./components/footer";
 
-class App extends React.Component{
+class App extends Component{
     render() {
-        const  name = "Yeahyea Sarker"
-        const showHello = true
-        const showMath = true
-        const math1 = 40
-        const math2 = 23
-
-
-        let math;
-        if (showMath){
-            math = (
-                <h3>{math1} + {math2} = {math1+math2}</h3>
-            )
-        }else {
-            math = null
-        }
         return(
             <div className="App">
                 <div className="App-header">
                     <img src={logo} className="App-logo" alt="icon"/>
-                    { showHello ? <h1> Hello {name.toUpperCase()} !!</h1> : null}
-                    {/*{ showMath ? <h3>1 + 1 = {1+1}</h3> : "Don't have permision"}*/}
-                    { math}
+                    <Header/>
+                    {/*<MainContent/>*/}
+                    <Footer/>
                 </div>
             </div>
         )

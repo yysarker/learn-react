@@ -57,3 +57,23 @@ input[type=checkbox] {
 input[type=checkbox]:focus {
   outline: 0;
 }
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li{
+  list-style: none;
+  display: block;
+  padding: 4px 8px;
+}
+ul li a{
+  text-decoration: none;
+  color: #eee;
+  cursor: pointer;
+}
+ul li a:hover{
+  color: #61dafb;
+  cursor: pointer;
+  text-decoration: underline;
+}
