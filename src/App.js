@@ -44,7 +44,7 @@ import React, {Component} from "react"
 import logo from "./logo.svg"
 import "./App.css"
 import Header from "./components/header";
-import MainContent from "./components/mainContent";
+// import MainContent from "./components/mainContent";
 import Footer from "./components/footer";
 
 class App extends Component{
@@ -54,8 +54,8 @@ class App extends Component{
                 <div className="App-header">
                     <img src={logo} className="App-logo" alt="icon"/>
                     <Header name="Yeahyea Sarker" phone="333-333-3333" email="yeahyea@gmail.com" roll="Software Developer"/>
-                    {/*<MainContent/>*/}
-                    <Footer/>
+
+                    <Footer />
                 </div>
             </div>
         )
